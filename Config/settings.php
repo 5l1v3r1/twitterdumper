@@ -2,7 +2,7 @@
 
 
 $settings['db']  = array(
-    'dbname' => 'critizen',
+    'dbname' => 'dumps',
     'user' => 'root',
     'password' => '',
     'host' => 'localhost',
