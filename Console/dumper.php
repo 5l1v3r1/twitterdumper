@@ -10,7 +10,7 @@ require dirname(__FILE__) . "/../Lib/TwitterDumper.php";
 
 
 
-function dumpTwiterSearchToDB ( $tag = '' , $count = 100,  $verbose = false ) {
+function dumpTwitterSearchToDB ( $tag = '' , $count = 100,  $verbose = false ) {
 
 
 	$config = Configure::load();
@@ -41,4 +41,4 @@ if ( ! empty( $argv[2] ) )
 	$count = (int)$argv[2];
 
 
-dumpTwiterSearchToDB( $tag , $count, $verbose ) ;
+dumpTwitterSearchToDB( $tag , $count, $verbose ) ;

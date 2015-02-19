@@ -18,6 +18,13 @@ class TwitterDumper {
 
 		$tweets = $this->_twitter->getByTag( $tag , $count ) ;
 				
+		if ( ! empty ( $tweets->errors ) ){
+			foreach ( $tweets->errors as $error ) {
+				printf ("%s\n", $error->message);
+			}
+			return false ;
+		}
+		
 		foreach ( $tweets->statuses as $tweet ) {
 	
 			$data = array ( 			

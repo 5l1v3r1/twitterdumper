@@ -23,13 +23,17 @@ apt-get install php5-curl php5-mysql php5-memcached
 # memcached 
 apt-get install memcached
 
+# clonar con github 
+git clone https://github.com/jsenin/twitterdumper.git
+
 # paquetes php de terceros, instalar via composer 
 * smarty 
 * doctrine dbal
 * abraham's twitteroauth
 
 curl -sS https://getcomposer.org/installer | php
-composer install 
+php composer.phar install 
+
 
 # Configuraciones / settings 
 Es necesario configurar en app/Config/settings.php

@@ -20,12 +20,12 @@ class TwitterAPI  {
 
 	}
 
-	public function request ( $request = '' , $value = '' ,$count = 15 ) {
-		return $this->_conn->get( $request , array("q" => $value , "count" => $count ));
-	}
 	
+	public function getByTag( $tag ='' , $count = 100 ){ 
 	
-	public function getByTag( $tag ='' , $count = 100 ){
-		return $this->request('search/tweets', $tag , $count );
+		$request = 'search/tweets';
+		$params = array("q" => $tag , "count" => $count );
+		$result  =  $this->_conn->get( $request , $params );
+		return $result ;		
 	}
 } 
