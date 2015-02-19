@@ -60,7 +60,8 @@ RUN
 
 # Para volcar tweets de twitter en la base de datos  
 # tag : texto por el que buscar en twitter
-# count : numero de tweets a descargar, limitado por la api de twitter. Por defecto 100
+# count : numero de tweets a descargar, limitado por la api de twitter. Por defecto 100 ( maximo )
+# https://dev.twitter.com/rest/reference/get/search/tweets
 php Console/dumper.php TAG [count]
 
 
@@ -68,7 +69,11 @@ php Console/dumper.php TAG [count]
 # arranca un servidor standalone en el puerto 9999
 # abrir un navegador en http://localhost:9999
 
-php -S localhost:9999 app/src 
+php -S localhost:9999 -t app/src/
 
+
+abrir navegador en 
+
+http://localhost:9999
 
 

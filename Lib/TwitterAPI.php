@@ -22,7 +22,7 @@ class TwitterAPI  {
 
 	
 	public function getByTag( $tag ='' , $count = 100 ){ 
-	
+
 		$request = 'search/tweets';
 		$params = array("q" => $tag , "count" => $count );
 		$result  =  $this->_conn->get( $request , $params );

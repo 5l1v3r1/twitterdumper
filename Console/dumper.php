@@ -38,7 +38,7 @@ $tag= $argv[1];
 
 $count = 100;
 if ( ! empty( $argv[2] ) ) 
-	$count = (int)$argv[2];
+	$count = intval($argv[2]);
 
 
 dumpTwitterSearchToDB( $tag , $count, $verbose ) ;
