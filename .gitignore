@@ -1,1 +1,3 @@
 Vendor/*
+composer.lock
+composer.phar
