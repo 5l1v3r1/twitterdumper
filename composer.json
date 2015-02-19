@@ -1,4 +1,12 @@
 {
+
+"name": "jsenin/twitterdumper",
+"type": "demo",
+"description": "Dumps tweets to database using command line and show it using a simple php script + js",
+"keywords": ["dumps", "twitter", "file"],
+"homepage": "https://github.com/jsenin/twitterdumper",
+"license": " GPL-2.0",
+
 "require": {
    "smarty/smarty": "~3.1",
    "doctrine/dbal": "2.6.*@dev",
